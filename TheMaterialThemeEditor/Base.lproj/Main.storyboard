@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TheMaterialThemeEditor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="RZ7-Ya-sn2">
+                                <rect key="frame" x="5" y="94" width="404" height="200"/>
+                                <subviews>
+                                    <view alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HfC-DW-lsI" customClass="CustomBigView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="201" height="200"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="cjr-WJ-b45">
+                                        <rect key="frame" x="203" y="0.0" width="201" height="200"/>
+                                        <subviews>
+                                            <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kLU-U1-ypr" customClass="CustomBigView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="201" height="99"/>
+                                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                            </view>
+                                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pFg-z6-zRi" customClass="CustomBigView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="101" width="201" height="99"/>
+                                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="ZcS-BU-p93"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="YsS-fW-HSa">
+                                <rect key="frame" x="20" y="314" width="374" height="461.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="KI9-PG-iXH">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="37.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bha-g0-MvI" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Bha-g0-MvI" secondAttribute="height" id="dph-2U-Qdy"/>
+                                                </constraints>
+                                            </view>
+                                            <view alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h4U-if-7iv" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="37.5" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zlU-UJ-60N" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="75" y="0.0" width="37" height="37.5"/>
+                                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f7e-Pe-MCK" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="112" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lQ0-cT-PaC" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="149.5" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e3V-uk-rw6" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="187" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Ic-0w-tkN" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="224.5" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Emk-Jj-jFY" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="262" y="0.0" width="37" height="37.5"/>
+                                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="53Q-jC-TOj" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="299" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.10000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qHF-xx-bDi" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="336.5" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="q8u-jG-omD">
+                                        <rect key="frame" x="0.0" y="42.5" width="374" height="37.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3eZ-xh-ADS" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                            </view>
+                                            <view alpha="0.89999997615814209" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CWn-0r-GoD" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="37.5" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                            </view>
+                                            <view alpha="0.80000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kwE-P0-rRG" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="75" y="0.0" width="37" height="37.5"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                            </view>
+                                            <view alpha="0.69999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z5b-lK-IEH" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="112" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                            </view>
+                                            <view alpha="0.60000002384185791" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zOg-7X-dLF" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="149.5" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                            </view>
+                                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mxs-E9-GKN" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="187" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                            </view>
+                                            <view alpha="0.40000000596046448" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M2v-zB-Eb1" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="224.5" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                            </view>
+                                            <view alpha="0.30000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6he-ga-6Vb" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="262" y="0.0" width="37" height="37.5"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                            </view>
+                                            <view alpha="0.20000000298023224" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rsb-aM-Cdy" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="299" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                            </view>
+                                            <view alpha="0.10000000149011612" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rbf-IE-HAR" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="336.5" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="NpA-Xk-wqj">
+                                        <rect key="frame" x="0.0" y="85" width="374" height="37"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aZs-4O-ZBF" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="37.5" height="37"/>
+                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                            </view>
+                                            <view alpha="0.89999997615814209" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vPg-f5-VYm" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="37.5" y="0.0" width="37.5" height="37"/>
+                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                            </view>
+                                            <view alpha="0.80000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IhT-DT-bOI" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="75" y="0.0" width="37" height="37"/>
+                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                            </view>
+                                            <view alpha="0.69999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WdD-Lu-qnd" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="112" y="0.0" width="37.5" height="37"/>
+                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                            </view>
+                                            <view alpha="0.60000002384185791" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kkG-PT-E8j" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="149.5" y="0.0" width="37.5" height="37"/>
+                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                            </view>
+                                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KS3-fA-KBo" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="187" y="0.0" width="37.5" height="37"/>
+                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                            </view>
+                                            <view alpha="0.40000000596046448" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fgV-OG-nXq" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="224.5" y="0.0" width="37.5" height="37"/>
+                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                            </view>
+                                            <view alpha="0.30000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wpg-px-X8s" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="262" y="0.0" width="37" height="37"/>
+                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                            </view>
+                                            <view alpha="0.20000000298023224" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lX7-yq-9NG" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="299" y="0.0" width="37.5" height="37"/>
+                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                            </view>
+                                            <view alpha="0.10000000149011612" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3nf-42-KBc" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="336.5" y="0.0" width="37.5" height="37"/>
+                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="wGT-wt-fcg">
+                                        <rect key="frame" x="0.0" y="127" width="374" height="37.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZoA-NE-7HN" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                            </view>
+                                            <view alpha="0.89999997615814209" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e1C-Ed-RF6" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="37.5" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                            </view>
+                                            <view alpha="0.80000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jhe-RK-MTT" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="75" y="0.0" width="37" height="37.5"/>
+                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                            </view>
+                                            <view alpha="0.69999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oia-7C-FSF" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="112" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                            </view>
+                                            <view alpha="0.60000002384185791" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JDR-6m-DMc" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="149.5" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                            </view>
+                                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IeK-7H-9wd" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="187" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                            </view>
+                                            <view alpha="0.40000000596046448" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PK1-SR-iiA" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="224.5" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                            </view>
+                                            <view alpha="0.30000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K8H-Cw-wjf" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="262" y="0.0" width="37" height="37.5"/>
+                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                            </view>
+                                            <view alpha="0.20000000298023224" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t3L-d4-7ZT" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="299" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                            </view>
+                                            <view alpha="0.10000000149011612" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DV5-5s-2DH" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="336.5" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Agh-ps-7QX">
+                                        <rect key="frame" x="0.0" y="169.5" width="374" height="37.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e01-e8-FlX" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                            </view>
+                                            <view alpha="0.89999997615814209" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FkP-vt-9jN" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="37.5" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                            </view>
+                                            <view alpha="0.80000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JwH-P8-ZVG" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="75" y="0.0" width="37" height="37.5"/>
+                                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                            </view>
+                                            <view alpha="0.69999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jWJ-Jl-SUs" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="112" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                            </view>
+                                            <view alpha="0.60000002384185791" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I9D-hq-TFP" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="149.5" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                            </view>
+                                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vd4-13-jVd" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="187" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                            </view>
+                                            <view alpha="0.40000000596046448" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0PD-gg-hzL" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="224.5" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                            </view>
+                                            <view alpha="0.30000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ymp-8q-hsp" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="262" y="0.0" width="37" height="37.5"/>
+                                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                            </view>
+                                            <view alpha="0.20000000298023224" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3U8-Yt-rln" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="299" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                            </view>
+                                            <view alpha="0.10000000149011612" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bBp-Cw-3Dp" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="336.5" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="zr2-bg-wHF">
+                                        <rect key="frame" x="0.0" y="212" width="374" height="37.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mgl-pv-huK" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                            </view>
+                                            <view alpha="0.89999997615814209" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3d3-vF-kvr" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="37.5" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                            </view>
+                                            <view alpha="0.80000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rf9-QA-MY1" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="75" y="0.0" width="37" height="37.5"/>
+                                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                            </view>
+                                            <view alpha="0.69999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pOf-rt-JGm" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="112" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                            </view>
+                                            <view alpha="0.60000002384185791" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ys5-7r-XLl" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="149.5" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                            </view>
+                                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3PB-fY-eDe" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="187" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                            </view>
+                                            <view alpha="0.40000000596046448" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tVa-PQ-Ij0" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="224.5" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                            </view>
+                                            <view alpha="0.30000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OrS-QE-f6P" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="262" y="0.0" width="37" height="37.5"/>
+                                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                            </view>
+                                            <view alpha="0.20000000298023224" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GsH-Ou-d5u" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="299" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                            </view>
+                                            <view alpha="0.10000000149011612" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9aA-Va-tsE" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="336.5" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="3W6-hS-3yG">
+                                        <rect key="frame" x="0.0" y="254.5" width="374" height="37.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="12b-H6-zLT" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.89999997615814209" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D80-ZH-N9V" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="37.5" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.80000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nqn-Ls-5RZ" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="75" y="0.0" width="37" height="37.5"/>
+                                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.69999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pZw-K4-TGn" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="112" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.60000002384185791" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NTs-QE-wIj" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="149.5" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gY4-LS-URP" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="187" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.40000000596046448" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Us2-VC-htp" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="224.5" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.30000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gxP-6M-RC3" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="262" y="0.0" width="37" height="37.5"/>
+                                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.20000000298023224" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rtz-YY-bpC" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="299" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.10000000149011612" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zTY-wL-leS" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="336.5" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="w5r-Gi-rVo">
+                                        <rect key="frame" x="0.0" y="297" width="374" height="37"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x5u-Qt-9Wd" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="37.5" height="37"/>
+                                                <color key="backgroundColor" red="0.55634254220000001" green="0.97934550050000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.89999997615814209" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L2l-IV-Zsw" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="37.5" y="0.0" width="37.5" height="37"/>
+                                                <color key="backgroundColor" red="0.55634254220000001" green="0.97934550050000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.80000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="80w-Sr-oXh" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="75" y="0.0" width="37" height="37"/>
+                                                <color key="backgroundColor" red="0.55634254220000001" green="0.97934550050000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.69999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sb3-pg-lt9" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="112" y="0.0" width="37.5" height="37"/>
+                                                <color key="backgroundColor" red="0.55634254220000001" green="0.97934550050000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.60000002384185791" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xKU-EW-4f1" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="149.5" y="0.0" width="37.5" height="37"/>
+                                                <color key="backgroundColor" red="0.55634254220000001" green="0.97934550050000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4lZ-vM-ifB" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="187" y="0.0" width="37.5" height="37"/>
+                                                <color key="backgroundColor" red="0.55634254220000001" green="0.97934550050000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.40000000596046448" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1sg-z6-t1g" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="224.5" y="0.0" width="37.5" height="37"/>
+                                                <color key="backgroundColor" red="0.55634254220000001" green="0.97934550050000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.30000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p4C-Yy-pu1" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="262" y="0.0" width="37" height="37"/>
+                                                <color key="backgroundColor" red="0.55634254220000001" green="0.97934550050000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.20000000298023224" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VYC-zm-9nR" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="299" y="0.0" width="37.5" height="37"/>
+                                                <color key="backgroundColor" red="0.55634254220000001" green="0.97934550050000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.10000000149011612" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ele-pa-mMa" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="336.5" y="0.0" width="37.5" height="37"/>
+                                                <color key="backgroundColor" red="0.55634254220000001" green="0.97934550050000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="GeM-Lw-7oy">
+                                        <rect key="frame" x="0.0" y="339" width="374" height="37.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FKd-En-0Tp" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.89999997615814209" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fH8-X6-upw" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="37.5" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.80000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UZu-ZC-HFd" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="75" y="0.0" width="37" height="37.5"/>
+                                                <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.69999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5iq-Iy-TGy" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="112" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.60000002384185791" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7XL-op-lFw" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="149.5" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gaF-tO-JHx" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="187" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.40000000596046448" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fiU-51-JXC" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="224.5" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.30000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b7U-TX-J5J" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="262" y="0.0" width="37" height="37.5"/>
+                                                <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.20000000298023224" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mYt-MI-wyT" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="299" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.10000000149011612" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mW5-PU-d9l" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="336.5" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="dn7-rq-qZC">
+                                        <rect key="frame" x="0.0" y="381.5" width="374" height="37.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ykd-EO-iWq" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.89999997615814209" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mRN-ai-ZSV" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="37.5" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.80000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9OP-0n-zn0" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="75" y="0.0" width="37" height="37.5"/>
+                                                <color key="backgroundColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.69999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m62-XR-hLB" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="112" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.60000002384185791" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wfx-RQ-4Dq" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="149.5" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="60J-fz-13n" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="187" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.40000000596046448" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zdV-jP-rCh" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="224.5" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.30000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lZe-tv-PQ9" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="262" y="0.0" width="37" height="37.5"/>
+                                                <color key="backgroundColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.20000000298023224" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nel-uo-rho" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="299" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.10000000149011612" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F6f-uB-yiX" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="336.5" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="fJ8-c7-Km4">
+                                        <rect key="frame" x="0.0" y="424" width="374" height="37.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mxd-cw-Ppo" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.89999997615814209" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V6L-Al-3pi" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="37.5" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.80000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yO9-fF-GVp" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="75" y="0.0" width="37" height="37.5"/>
+                                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.69999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yJv-Op-xaI" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="112" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.60000002384185791" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BUX-Wh-L0U" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="149.5" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mr5-KU-WXY" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="187" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.40000000596046448" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="efN-r8-YWS" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="224.5" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.30000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eei-6t-x5E" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="262" y="0.0" width="37" height="37.5"/>
+                                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.20000000298023224" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aHh-bs-WRu" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="299" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view alpha="0.10000000149011612" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EsF-qT-cW0" customClass="CustomView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
+                                                <rect key="frame" x="336.5" y="0.0" width="37.5" height="37.5"/>
+                                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RZ7-Ya-sn2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="Nxw-6c-nr1"/>
+                            <constraint firstItem="YsS-fW-HSa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="QYl-yT-NZc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RZ7-Ya-sn2" secondAttribute="trailing" constant="5" id="eMz-t5-qE6"/>
+                            <constraint firstItem="YsS-fW-HSa" firstAttribute="top" secondItem="RZ7-Ya-sn2" secondAttribute="bottom" constant="20" id="h1D-4J-BH0"/>
+                            <constraint firstItem="RZ7-Ya-sn2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="luw-tV-PxI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YsS-fW-HSa" secondAttribute="trailing" constant="20" id="yiP-Or-tQM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="redStackView" destination="KI9-PG-iXH" id="VG3-fs-9Fd"/>
+                        <outlet property="view1" destination="HfC-DW-lsI" id="Rvk-Ja-2on"/>
+                        <outlet property="view2" destination="kLU-U1-ypr" id="P9G-pe-XiH"/>
+                        <outlet property="view3" destination="pFg-z6-zRi" id="Xqa-dx-NAc"/>
+                        <outletCollection property="redViews" destination="Bha-g0-MvI" collectionClass="NSMutableArray" id="jHu-dL-Bb3"/>
+                        <outletCollection property="redViews" destination="h4U-if-7iv" collectionClass="NSMutableArray" id="hO1-fD-ZQG"/>
+                        <outletCollection property="redViews" destination="zlU-UJ-60N" collectionClass="NSMutableArray" id="viq-j1-Phj"/>
+                        <outletCollection property="redViews" destination="f7e-Pe-MCK" collectionClass="NSMutableArray" id="RBw-Mb-mNP"/>
+                        <outletCollection property="redViews" destination="lQ0-cT-PaC" collectionClass="NSMutableArray" id="2Dr-bl-INU"/>
+                        <outletCollection property="redViews" destination="e3V-uk-rw6" collectionClass="NSMutableArray" id="Yq6-LC-uLj"/>
+                        <outletCollection property="redViews" destination="3Ic-0w-tkN" collectionClass="NSMutableArray" id="oz8-Aa-wHt"/>
+                        <outletCollection property="redViews" destination="Emk-Jj-jFY" collectionClass="NSMutableArray" id="z2Y-cF-XmH"/>
+                        <outletCollection property="redViews" destination="53Q-jC-TOj" collectionClass="NSMutableArray" id="MJv-nA-lKu"/>
+                        <outletCollection property="redViews" destination="qHF-xx-bDi" collectionClass="NSMutableArray" id="lZM-It-60q"/>
+                        <outletCollection property="orangeViews" destination="3eZ-xh-ADS" collectionClass="NSMutableArray" id="wFf-yz-RYm"/>
+                        <outletCollection property="orangeViews" destination="CWn-0r-GoD" collectionClass="NSMutableArray" id="Hdj-EH-zhi"/>
+                        <outletCollection property="orangeViews" destination="kwE-P0-rRG" collectionClass="NSMutableArray" id="19B-kb-7qM"/>
+                        <outletCollection property="orangeViews" destination="Z5b-lK-IEH" collectionClass="NSMutableArray" id="4fE-Jw-S7R"/>
+                        <outletCollection property="orangeViews" destination="zOg-7X-dLF" collectionClass="NSMutableArray" id="JLH-6H-mKU"/>
+                        <outletCollection property="orangeViews" destination="Mxs-E9-GKN" collectionClass="NSMutableArray" id="epq-I4-04o"/>
+                        <outletCollection property="orangeViews" destination="M2v-zB-Eb1" collectionClass="NSMutableArray" id="yUx-3j-vjx"/>
+                        <outletCollection property="orangeViews" destination="6he-ga-6Vb" collectionClass="NSMutableArray" id="kDP-4T-SdV"/>
+                        <outletCollection property="orangeViews" destination="Rsb-aM-Cdy" collectionClass="NSMutableArray" id="nq4-Yg-upq"/>
+                        <outletCollection property="orangeViews" destination="rbf-IE-HAR" collectionClass="NSMutableArray" id="GdF-zB-PXj"/>
+                        <outletCollection property="purpleViews" destination="aZs-4O-ZBF" collectionClass="NSMutableArray" id="JGZ-km-HXL"/>
+                        <outletCollection property="purpleViews" destination="vPg-f5-VYm" collectionClass="NSMutableArray" id="buK-Ug-Hzs"/>
+                        <outletCollection property="purpleViews" destination="IhT-DT-bOI" collectionClass="NSMutableArray" id="MVi-F9-nM6"/>
+                        <outletCollection property="purpleViews" destination="WdD-Lu-qnd" collectionClass="NSMutableArray" id="n3x-oI-63c"/>
+                        <outletCollection property="purpleViews" destination="kkG-PT-E8j" collectionClass="NSMutableArray" id="5sa-0U-ysu"/>
+                        <outletCollection property="purpleViews" destination="KS3-fA-KBo" collectionClass="NSMutableArray" id="9uH-3b-ABC"/>
+                        <outletCollection property="purpleViews" destination="fgV-OG-nXq" collectionClass="NSMutableArray" id="C7X-LF-M3t"/>
+                        <outletCollection property="purpleViews" destination="wpg-px-X8s" collectionClass="NSMutableArray" id="MwQ-8N-DCJ"/>
+                        <outletCollection property="purpleViews" destination="lX7-yq-9NG" collectionClass="NSMutableArray" id="XXC-lx-guJ"/>
+                        <outletCollection property="purpleViews" destination="3nf-42-KBc" collectionClass="NSMutableArray" id="tEG-kP-P2F"/>
+                        <outletCollection property="greenViews" destination="ZoA-NE-7HN" collectionClass="NSMutableArray" id="H9e-6O-O4d"/>
+                        <outletCollection property="greenViews" destination="e1C-Ed-RF6" collectionClass="NSMutableArray" id="b74-2y-Lh9"/>
+                        <outletCollection property="greenViews" destination="Jhe-RK-MTT" collectionClass="NSMutableArray" id="Kwh-FI-e6W"/>
+                        <outletCollection property="greenViews" destination="Oia-7C-FSF" collectionClass="NSMutableArray" id="8uB-kE-Vzl"/>
+                        <outletCollection property="greenViews" destination="JDR-6m-DMc" collectionClass="NSMutableArray" id="RaK-n8-eK0"/>
+                        <outletCollection property="greenViews" destination="IeK-7H-9wd" collectionClass="NSMutableArray" id="fd1-D7-Ygb"/>
+                        <outletCollection property="greenViews" destination="PK1-SR-iiA" collectionClass="NSMutableArray" id="X6T-ly-sbn"/>
+                        <outletCollection property="greenViews" destination="K8H-Cw-wjf" collectionClass="NSMutableArray" id="jpQ-gh-Ozc"/>
+                        <outletCollection property="greenViews" destination="t3L-d4-7ZT" collectionClass="NSMutableArray" id="QsG-sj-f2i"/>
+                        <outletCollection property="greenViews" destination="DV5-5s-2DH" collectionClass="NSMutableArray" id="yj0-Ni-hB4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="97" y="94"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
