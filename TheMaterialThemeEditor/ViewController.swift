@@ -35,7 +35,7 @@ final class CustomBigView: UIView {
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
-
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         delegate?.didTapped(newSelectedView: self)
     }
@@ -48,39 +48,64 @@ final class ViewController: UIViewController {
     @IBOutlet private weak var view2: CustomBigView!
     @IBOutlet private weak var view3: CustomBigView!
     @IBOutlet private weak var redStackView: UIStackView!
-    @IBOutlet private var redViews: [CustomView]!
-    @IBOutlet private var orangeViews: [CustomView]!
-    @IBOutlet private var purpleViews: [CustomView]!
-    @IBOutlet private var greenViews: [CustomView]!
+    @IBOutlet private weak var orangeStackView: UIStackView!
+    @IBOutlet private weak var purpleStackView: UIStackView!
+    @IBOutlet private weak var greenStackView: UIStackView!
+    @IBOutlet private weak var skyBlueStackView: UIStackView!
+    @IBOutlet private weak var pinkStackView: UIStackView!
+    @IBOutlet private weak var blueStackView: UIStackView!
+    @IBOutlet private weak var yellowGreenStackView: UIStackView!
+    @IBOutlet private weak var purpleBlueStackView: UIStackView!
+    @IBOutlet private weak var pink2StackView: UIStackView!
+    @IBOutlet private weak var pink3StackView: UIStackView!
     
     private var selectedView: UIView?
     private var oldSelectedBigView: UIView?
+    private var allViews: [CustomView]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        orangeViews.forEach { $0.delegate = self }
-        purpleViews.forEach { $0.delegate = self }
-        greenViews.forEach { $0.delegate = self }
         
         view1.delegate = self
         view2.delegate = self
         view3.delegate = self
         
-        redStackView.arrangedSubviews.forEach { view in
-            let customView = view as? CustomView
-            customView?.delegate = self
-        }
+        configure(redStackView)
+        configure(orangeStackView)
+        configure(purpleStackView)
+        configure(greenStackView)
+        configure(skyBlueStackView)
+        configure(pinkStackView)
+        configure(blueStackView)
+        configure(yellowGreenStackView)
+        configure(purpleBlueStackView)
+        configure(pink2StackView)
+        configure(pink3StackView)
         
-        addImageView(view: view1)
-        addImageView(view: view2)
-        addImageView(view: view3)
         view1.imageView.isHidden = false
         oldSelectedBigView = view1
         
     }
     
-    private func addImageView(view: CustomBigView) {
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        configureImageView(view: view1)
+        configureImageView(view: view2)
+        configureImageView(view: view3)
+        
+    }
+    
+    private func configure(_ stackView: UIStackView) {
+        stackView.arrangedSubviews
+            .map { $0 as! CustomView }
+            .forEach {
+                $0.delegate = self
+                allViews?.append($0)
+            }
+    }
+    
+    private func configureImageView(view: CustomBigView) {
         view.addSubview(view.imageView)
         [view.imageView.heightAnchor.constraint(equalToConstant: 50),
          view.imageView.widthAnchor.constraint(equalToConstant: 50),
@@ -125,8 +150,7 @@ extension ViewController: CustomBigViewDelegate {
             _newSelectedView.imageView.isHidden = false
             _oldSelectedBigView.imageView.isHidden = true
             self.selectedView?.layer.cornerRadius = 0
-            let allViews = redViews + orangeViews + purpleViews + greenViews
-            allViews.forEach { view in
+            allViews?.forEach { view in
                 let sameColor = (view.backgroundColor == newSelectedView.backgroundColor)
                 let sameAlpha = (view.alpha == newSelectedView.alpha)
                 if sameColor && sameAlpha {
