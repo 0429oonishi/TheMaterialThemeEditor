@@ -8,7 +8,7 @@
 import UIKit
 
 protocol CustomViewDelegate: AnyObject {
-    func didTapped(color: UIColor, alpha: CGFloat, selectedView: UIView)
+    func didTapped(selectedView: UIView)
 }
 
 final class CustomView: UIView {
@@ -16,13 +16,21 @@ final class CustomView: UIView {
     weak var delegate: CustomViewDelegate?
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        delegate?.didTapped(color: self.backgroundColor!, alpha: self.alpha, selectedView: self)
+        UIView.animate(withDuration: 0, animations: {
+            self.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
+        }, completion: { _ in
+            UIView.animate(withDuration: 0.1) {
+                self.transform = .identity
+                self.layer.cornerRadius = self.frame.size.width / 2
+            }
+        })
+        delegate?.didTapped(selectedView: self)
     }
     
 }
 
 protocol CustomBigViewDelegate: AnyObject {
-    func didTapped(newSelectedView: UIView)
+    func didTapped(newSelectedBigView: UIView)
 }
 
 final class CustomBigView: UIView {
@@ -37,7 +45,7 @@ final class CustomBigView: UIView {
     }()
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        delegate?.didTapped(newSelectedView: self)
+        delegate?.didTapped(newSelectedBigView: self)
     }
     
 }
@@ -83,9 +91,9 @@ final class ViewController: UIViewController {
         configure(pink3StackView)
         
         view1.backgroundColor = redStackView.arrangedSubviews[0].backgroundColor
-        view2.backgroundColor = orangeStackView.arrangedSubviews[1].backgroundColor
-        view3.backgroundColor = purpleStackView.arrangedSubviews[2].backgroundColor
-
+        view2.backgroundColor = orangeStackView.arrangedSubviews[0].backgroundColor
+        view3.backgroundColor = purpleStackView.arrangedSubviews[0].backgroundColor
+        
         configureImageView(view: view1)
         configureImageView(view: view2)
         configureImageView(view: view3)
@@ -129,17 +137,9 @@ final class ViewController: UIViewController {
 
 extension ViewController: CustomViewDelegate {
     
-    func didTapped(color: UIColor, alpha: CGFloat, selectedView: UIView) {
-        UIView.animate(withDuration: 0, animations: {
-            selectedView.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
-        }, completion: { _ in
-            UIView.animate(withDuration: 0.1) {
-                selectedView.transform = .identity
-                selectedView.layer.cornerRadius = selectedView.frame.size.width / 2
-            }
-        })
-        oldSelectedBigView?.backgroundColor = color
-        oldSelectedBigView?.alpha = alpha
+    func didTapped(selectedView: UIView) {
+        oldSelectedBigView?.backgroundColor = selectedView.backgroundColor
+        oldSelectedBigView?.alpha = selectedView.alpha
         UIView.animate(withDuration: 0.1) {
             if self.selectedView != selectedView {
                 self.selectedView?.layer.cornerRadius = 0
@@ -152,17 +152,17 @@ extension ViewController: CustomViewDelegate {
 
 extension ViewController: CustomBigViewDelegate {
     
-    func didTapped(newSelectedView: UIView) {
-        let isSameViewDidTapped = (oldSelectedBigView == newSelectedView)
-        let _newSelectedView = (newSelectedView as! CustomBigView)
+    func didTapped(newSelectedBigView: UIView) {
+        let isSameViewDidTapped = (oldSelectedBigView == newSelectedBigView)
+        let _newSelectedView = (newSelectedBigView as! CustomBigView)
         let _oldSelectedBigView = (oldSelectedBigView as! CustomBigView)
         if !isSameViewDidTapped {
             _newSelectedView.imageView.isHidden = false
             _oldSelectedBigView.imageView.isHidden = true
-            self.selectedView?.layer.cornerRadius = 0
-            self.find(selectedView: newSelectedView)
+            selectedView?.layer.cornerRadius = 0
+            find(selectedView: newSelectedBigView)
         }
-        oldSelectedBigView = newSelectedView
+        self.oldSelectedBigView = newSelectedBigView
     }
     
 }
