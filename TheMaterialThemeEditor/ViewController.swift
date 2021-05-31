@@ -61,7 +61,7 @@ final class ViewController: UIViewController {
     
     private var selectedView: UIView?
     private var oldSelectedBigView: UIView?
-    private var allViews: [CustomView]?
+    private var allViews = [CustomView]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -82,17 +82,16 @@ final class ViewController: UIViewController {
         configure(pink2StackView)
         configure(pink3StackView)
         
-        view1.imageView.isHidden = false
-        oldSelectedBigView = view1
-        
-    }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        
+        view1.backgroundColor = redStackView.arrangedSubviews[0].backgroundColor
+        view2.backgroundColor = orangeStackView.arrangedSubviews[1].backgroundColor
+        view3.backgroundColor = purpleStackView.arrangedSubviews[2].backgroundColor
+
         configureImageView(view: view1)
         configureImageView(view: view2)
         configureImageView(view: view3)
+        view1.imageView.isHidden = false
+        oldSelectedBigView = view1
+        find(selectedView: view1)
         
     }
     
@@ -101,7 +100,7 @@ final class ViewController: UIViewController {
             .map { $0 as! CustomView }
             .forEach {
                 $0.delegate = self
-                allViews?.append($0)
+                allViews.append($0)
             }
     }
     
@@ -113,6 +112,17 @@ final class ViewController: UIViewController {
          view.imageView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
         ].forEach { $0.isActive = true }
         view.imageView.isHidden = true
+    }
+    
+    private func find(selectedView: UIView) {
+        allViews.forEach { view in
+            let sameColor = (view.backgroundColor == selectedView.backgroundColor)
+            let sameAlpha = (view.alpha == selectedView.alpha)
+            if sameColor && sameAlpha {
+                view.layer.cornerRadius = view.frame.size.width / 2
+                self.selectedView = view
+            }
+        }
     }
     
 }
@@ -150,14 +160,7 @@ extension ViewController: CustomBigViewDelegate {
             _newSelectedView.imageView.isHidden = false
             _oldSelectedBigView.imageView.isHidden = true
             self.selectedView?.layer.cornerRadius = 0
-            allViews?.forEach { view in
-                let sameColor = (view.backgroundColor == newSelectedView.backgroundColor)
-                let sameAlpha = (view.alpha == newSelectedView.alpha)
-                if sameColor && sameAlpha {
-                    view.layer.cornerRadius = view.frame.size.width / 2
-                    self.selectedView = view
-                }
-            }
+            self.find(selectedView: newSelectedView)
         }
         oldSelectedBigView = newSelectedView
     }
