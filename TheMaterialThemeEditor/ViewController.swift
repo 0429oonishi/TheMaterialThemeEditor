@@ -74,6 +74,23 @@ final class ViewController: UIViewController {
         setupImageView(view: accentColorView)
         mainColorView.imageView.isHidden = false
         oldSelectedBigView = mainColorView
+        
+        var alpha: CGFloat = 1.0
+        var count = 0
+        var red: CGFloat = 0
+        var green: CGFloat = 0
+        var blue: CGFloat = 0
+        // MARK: - ToDo stackViewをテーマカラーの数だけコードで追加する。
+        // MARK: - ToDo enumを使ってテーマカラーを決める。
+        themeColorStackViewAction {
+            if alpha < 0.1 {
+                alpha = 1.0
+                count += 1
+            }
+            $0.backgroundColor = UIColor(red: red, green: green, blue: blue, alpha: alpha)
+            alpha -= 0.1
+        }
+        
         find(selectedView: mainColorView)
         
     }
