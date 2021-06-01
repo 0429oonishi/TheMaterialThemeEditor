@@ -943,18 +943,63 @@
                                 <subviews>
                                     <view alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HfC-DW-lsI" customClass="CustomBigView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="196" height="200"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="メイン" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WjZ-GW-vYv">
+                                                <rect key="frame" x="10" y="10" width="52" height="20.5"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
                                         <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="WjZ-GW-vYv" firstAttribute="top" secondItem="HfC-DW-lsI" secondAttribute="top" constant="10" id="Mfw-xE-shY"/>
+                                            <constraint firstItem="WjZ-GW-vYv" firstAttribute="leading" secondItem="HfC-DW-lsI" secondAttribute="leading" constant="10" id="UE8-yN-Y29"/>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="WjZ-GW-vYv" secondAttribute="bottom" constant="10" id="bhN-6V-oPn"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="WjZ-GW-vYv" secondAttribute="trailing" constant="10" id="oBc-gd-vMW"/>
+                                        </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="cjr-WJ-b45">
                                         <rect key="frame" x="198" y="0.0" width="196" height="200"/>
                                         <subviews>
                                             <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kLU-U1-ypr" customClass="CustomBigView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="196" height="99"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="サブ" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dUT-VK-cI2">
+                                                        <rect key="frame" x="10" y="10" width="31" height="18"/>
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dUT-VK-cI2" secondAttribute="trailing" constant="10" id="YaC-fP-IA3"/>
+                                                    <constraint firstItem="dUT-VK-cI2" firstAttribute="leading" secondItem="kLU-U1-ypr" secondAttribute="leading" constant="10" id="cDR-Or-v2e"/>
+                                                    <constraint firstItem="dUT-VK-cI2" firstAttribute="top" secondItem="kLU-U1-ypr" secondAttribute="top" constant="10" id="diR-gi-cgt"/>
+                                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="dUT-VK-cI2" secondAttribute="bottom" constant="10" id="gjB-Sl-kC6"/>
+                                                </constraints>
                                             </view>
                                             <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pFg-z6-zRi" customClass="CustomBigView" customModule="TheMaterialThemeEditor" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="101" width="196" height="99"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="アクセント" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWg-bg-jbz">
+                                                        <rect key="frame" x="10" y="10" width="66.5" height="16"/>
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="13"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="bWg-bg-jbz" firstAttribute="top" secondItem="pFg-z6-zRi" secondAttribute="top" constant="10" id="KIH-gk-1Sb"/>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bWg-bg-jbz" secondAttribute="trailing" constant="10" id="bdN-5i-BH7"/>
+                                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="bWg-bg-jbz" secondAttribute="bottom" constant="10" id="jKm-qa-Tae"/>
+                                                    <constraint firstItem="bWg-bg-jbz" firstAttribute="leading" secondItem="pFg-z6-zRi" secondAttribute="leading" constant="10" id="y3i-Qx-fMe"/>
+                                                </constraints>
                                             </view>
                                         </subviews>
                                     </stackView>
