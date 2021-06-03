@@ -13,6 +13,9 @@
 		AB3719E826648E5F0067BA76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB3719E626648E5F0067BA76 /* Main.storyboard */; };
 		AB3719EA26648E620067BA76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB3719E926648E620067BA76 /* Assets.xcassets */; };
 		AB3719ED26648E620067BA76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB3719EB26648E620067BA76 /* LaunchScreen.storyboard */; };
+		AB93C2292668DF8A00C3AE8F /* ThemeColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C2282668DF8A00C3AE8F /* ThemeColorViewController.swift */; };
+		AB93C22C2668E13200C3AE8F /* ThemeColorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C22A2668E13200C3AE8F /* ThemeColorCollectionViewCell.swift */; };
+		AB93C22D2668E13200C3AE8F /* ThemeColorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB93C22B2668E13200C3AE8F /* ThemeColorCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		AB3719E926648E620067BA76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB3719EC26648E620067BA76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB3719EE26648E620067BA76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB93C2282668DF8A00C3AE8F /* ThemeColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeColorViewController.swift; sourceTree = "<group>"; };
+		AB93C22A2668E13200C3AE8F /* ThemeColorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeColorCollectionViewCell.swift; sourceTree = "<group>"; };
+		AB93C22B2668E13200C3AE8F /* ThemeColorCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThemeColorCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,9 @@
 				AB3719E026648E5F0067BA76 /* AppDelegate.swift */,
 				AB3719E226648E5F0067BA76 /* SceneDelegate.swift */,
 				AB3719E426648E5F0067BA76 /* ViewController.swift */,
+				AB93C2282668DF8A00C3AE8F /* ThemeColorViewController.swift */,
+				AB93C22A2668E13200C3AE8F /* ThemeColorCollectionViewCell.swift */,
+				AB93C22B2668E13200C3AE8F /* ThemeColorCollectionViewCell.xib */,
 				AB3719E626648E5F0067BA76 /* Main.storyboard */,
 				AB3719E926648E620067BA76 /* Assets.xcassets */,
 				AB3719EB26648E620067BA76 /* LaunchScreen.storyboard */,
@@ -124,6 +133,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB93C22D2668E13200C3AE8F /* ThemeColorCollectionViewCell.xib in Resources */,
 				AB3719ED26648E620067BA76 /* LaunchScreen.storyboard in Resources */,
 				AB3719EA26648E620067BA76 /* Assets.xcassets in Resources */,
 				AB3719E826648E5F0067BA76 /* Main.storyboard in Resources */,
@@ -137,8 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB93C22C2668E13200C3AE8F /* ThemeColorCollectionViewCell.swift in Sources */,
 				AB3719E526648E5F0067BA76 /* ViewController.swift in Sources */,
 				AB3719E126648E5F0067BA76 /* AppDelegate.swift in Sources */,
+				AB93C2292668DF8A00C3AE8F /* ThemeColorViewController.swift in Sources */,
 				AB3719E326648E5F0067BA76 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
